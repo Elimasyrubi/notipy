@@ -1,0 +1,59 @@
+@import '../../index.scss';
+
+.note{
+    width: 10rem;
+    margin: .5rem;
+    padding: 0 1rem;
+    border-radius: .4rem;
+    background-color: $verde_claro;
+    color: $claro ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+
+    &_contenido{
+        margin-right: 1rem;
+    }
+
+    button{
+        width: 1.2rem;
+        height: 1.2rem;
+        border: none;
+        background:none;
+        color: $claro;
+        font-size: 1rem;
+        opacity: 0;
+    }
+    .button_delete:hover{
+        color: red
+    }
+    .button_edit:hover{
+        color: $verde;
+    }
+    .button_delete:active{
+        color:$claro;
+        background-color: red
+    }
+    .button_delete:focus{
+        outline: none;
+    }
+}
+
+.note:hover{
+background-color: $oscuro;
+}
+.note:hover button{
+    opacity: 1;
+}
+
+
+
+/* 
+.bazul{
+    background-color: blue;
+}
+
+.brojo{
+    background-color: red;
+} */
